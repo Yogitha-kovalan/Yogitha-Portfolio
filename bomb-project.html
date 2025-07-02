@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bomb & Landmine Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #003366, #004080);
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: #fff;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, h2 {
+      color: #003366;
+    }
+
+    .project-img {
+      width: 100%;
+      max-width: 600px;
+      margin: 1.5rem auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto;
+      display: block;
+      border-radius: 10px;
+      border: 2px solid #003366;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container reveal-top">
+    <h1>Bomb & Landmine Detection and Diffusion System</h1>
+
+    <p class="reveal-left">
+        The Bomb & Landmine Detection and Diffusion System is a smart robotic solution designed to detect explosive threats and toxic gas leaks in military and industrial environments. It combines advanced technologies such as metal detectors, gas sensors, GPS tracking, robotic arms, and real-time video monitoring to ensure safety and efficiency during high-risk operations. This project helps reduce the need for human intervention in dangerous zones by providing remote control and real-time alerts using IoT, making it a reliable tool for bomb squads, disaster response teams, and industrial safety units.
+      </p>
+      
+      
+
+    <p class="reveal-left"><strong>Main Components Used:</strong></p>
+    <ul class="reveal-right">
+      <li>Arduino UNO</li>
+      <li>Metal Detector Sensor</li>
+      <li>Robotic Arm (Servo Motors)</li>
+      <li>IR Sensors, GPS Module, Bluetooth</li>
+      <li>Camera Module for live feed</li>
+      <li>Tracked chassis with L298N Motor Driver</li>
+    </ul>
+
+    <p class="reveal-left"><strong>Key Features:</strong></p>
+    <ul class="reveal-right">
+      <li>Detects metal-based bombs and landmines</li>
+      <li>Shares live location using GPS</li>
+      <li>Controlled via Bluetooth</li>
+      <li>Uses robotic arm for safe bomb removal</li>
+      <li>LED indicators and buzzer alerts</li>
+    </ul>
+
+    <h2 class="reveal-top">Demo Video:</h2>
+    <video controls class="reveal-bottom">
+      <source src="bomb-demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h2 class="reveal-top">Download Project PPT:</h2>
+<a href="Bomb_Project_PPT.pptx" download class="btn reveal-bottom" style="padding: 10px 20px; background-color: #003366; color: white; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1rem;">
+  📥 Download PPT
+</a>
+
+
+    <h2 class="reveal-top">Project Images:</h2>
+    <img src="bomb-front-view.jpg" class="project-img reveal-left" alt="Front View" />
+    <img src="bomb-back-view.jpg" class="project-img reveal-right" alt="Back View" />
+    <img src="bomb-cam-view.jpg" class="project-img reveal-bottom" alt="Camera View" />
+  </div>
+
+  <!-- ScrollReveal Script -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.reveal-top', { origin: 'top', distance: '50px', duration: 1000, delay: 200 });
+    ScrollReveal().reveal('.reveal-left', { origin: 'left', distance: '50px', duration: 1000, delay: 300 });
+    ScrollReveal().reveal('.reveal-right', { origin: 'right', distance: '50px', duration: 1000, delay: 300 });
+    ScrollReveal().reveal('.reveal-bottom', { origin: 'bottom', distance: '50px', duration: 1000, delay: 300 });
+  </script>
+
+</body>
+</html>
